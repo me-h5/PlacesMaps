@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="VenueTableViewCell" rowHeight="84" id="KGk-i7-Jjw" customClass="VenueTableViewCell" customModule="Places_to_Eat___Drink_on_Campus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJg-SY-grN">
+                        <rect key="frame" x="10" y="10" width="300" height="64"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fcB-tJ-dYJ">
+                                <rect key="frame" x="5" y="9.3333333333333321" width="40" height="45.333333333333343"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="sMf-1B-DiY"/>
+                                    <constraint firstAttribute="width" constant="40" id="vPS-D2-SJU"/>
+                                </constraints>
+                                <imageReference key="image" image="location.circle.fill" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
+                                    <hierarchicalColors>
+                                        <color systemColor="systemRedColor"/>
+                                        <color systemColor="secondaryLabelColor"/>
+                                        <color systemColor="tertiaryLabelColor"/>
+                                    </hierarchicalColors>
+                                </imageReference>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzL-Ao-OyQ">
+                                <rect key="frame" x="50" y="16.666666666666671" width="195" height="31"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ttg-Z3-Tlt">
+                                <rect key="frame" x="250" y="0.0" width="50" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="pJV-yw-Ia7"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tzL-Ao-OyQ" firstAttribute="leading" secondItem="fcB-tJ-dYJ" secondAttribute="trailing" constant="5" id="7vf-Bh-bIQ"/>
+                            <constraint firstAttribute="bottom" secondItem="Ttg-Z3-Tlt" secondAttribute="bottom" id="AZt-86-MEv"/>
+                            <constraint firstAttribute="bottom" secondItem="fcB-tJ-dYJ" secondAttribute="bottom" constant="12" id="ECl-ZU-b2w"/>
+                            <constraint firstItem="Ttg-Z3-Tlt" firstAttribute="leading" secondItem="tzL-Ao-OyQ" secondAttribute="trailing" constant="5" id="HZQ-Yv-PBX"/>
+                            <constraint firstItem="fcB-tJ-dYJ" firstAttribute="top" secondItem="DJg-SY-grN" secondAttribute="top" constant="12" id="asl-20-K5m"/>
+                            <constraint firstItem="fcB-tJ-dYJ" firstAttribute="leading" secondItem="DJg-SY-grN" secondAttribute="leading" constant="5" id="bQ1-LW-eUp"/>
+                            <constraint firstAttribute="trailing" secondItem="Ttg-Z3-Tlt" secondAttribute="trailing" id="bqW-Wi-hp2"/>
+                            <constraint firstItem="Ttg-Z3-Tlt" firstAttribute="top" secondItem="DJg-SY-grN" secondAttribute="top" id="eRz-bM-ePe"/>
+                            <constraint firstItem="fcB-tJ-dYJ" firstAttribute="centerY" secondItem="DJg-SY-grN" secondAttribute="centerY" id="nQr-i8-bXg"/>
+                            <constraint firstItem="tzL-Ao-OyQ" firstAttribute="centerY" secondItem="DJg-SY-grN" secondAttribute="centerY" id="wUr-xL-rdj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="DJg-SY-grN" secondAttribute="bottom" constant="10" id="Hhc-hm-91V"/>
+                    <constraint firstAttribute="trailing" secondItem="DJg-SY-grN" secondAttribute="trailing" constant="10" id="SYb-Na-vYQ"/>
+                    <constraint firstItem="DJg-SY-grN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="lnd-c2-bwz"/>
+                    <constraint firstItem="DJg-SY-grN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="pfq-LV-2bz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="likeButton" destination="Ttg-Z3-Tlt" id="rUF-aj-5D4"/>
+                <outlet property="locationNameLabel" destination="tzL-Ao-OyQ" id="ccr-Ly-wQR"/>
+            </connections>
+            <point key="canvasLocation" x="56.488549618320612" y="34.507042253521128"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="location.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
